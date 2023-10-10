@@ -1,4 +1,3 @@
-const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs");
 const db = JSON.parse(fs.readFileSync("./emails.json", "utf-8"));
@@ -87,5 +86,5 @@ const aFaitQMax = async (email, password) => {
 		console.log(obj)
 		db2.push(obj)
 	}
-	fs.writeFileSync("./res.json", JSON.stringify(db2))
+	fs.writeFileSync("./res.json", JSON.stringify(db2,null, 4))
 })()
