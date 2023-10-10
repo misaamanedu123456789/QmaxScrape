@@ -22,16 +22,14 @@ async function getJson(url) {
         data: {
             labels: names,
             datasets: [{
-
+                type: 'line',
+                label: 'avrage',
+                data: rData.map((item) => globAvreage),
+                borderWidth: 1
+            },{
                 type: 'bar',
                 label: '# points',
                 data: rData.map((item) => item[2][0][2]),
-                borderWidth: 1
-            },{
-
-                type: 'line',
-                label: 'avreage',
-                data: rData.map((item) => globAvreage),
                 borderWidth: 1
             }]
         },
