@@ -16,9 +16,15 @@ async function getJson(url) {
     });
     globAvreage /= nbPers;
 
-    console.log(globAvreage)
+    let test = Object.create(rData)
+    test.sort((a, b) => {
+        if(a[2][0][0] == false) return 1
+        if(b[2][0][0] == false) return -1
+        return b[2][0][2] - a[2][0][2]
+    })
+
     const names = rData.map((item) => item[0])
-    const wow = new Chart(dernierTest, {
+    let wow = new Chart(dernierTest, {
         data: {
             labels: names,
             datasets: [{
@@ -50,6 +56,27 @@ async function getJson(url) {
             }
         }
     })
+    document.getElementById("median").onchange = function (e) {
+        if (e.target.checked) {
+            wow.data.datasets[1] = {
+                type: 'bar',
+                label: '# points',
+                data: test.map((item) => item[2][0][2]),
+                borderWidth: 1
+            } 
+            wow.data.labels = test.map((item) => item[0])
+            
+        }else{
+            wow.data.datasets[1] = {
+                type: 'bar',
+                label: '# points',
+                data: rData.map((item) => item[2][0][2]),
+                borderWidth: 1
+            }
+            wow.data.labels = names
+        }
+        wow.update()
+    }
 
 
     const moyenne = document.getElementById('moy');
