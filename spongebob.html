@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPONGEBOB</title>
+</head>
+<body>
+    <input type="text" id="tt">
+    <p id="res"></p>
+</body>
+<script>
+    const spognged = (s) => {
+        let res = "";
+        for(let i = 0; i < s.length; i++){
+            if(i % 2 == 0){
+                res += s[i].toUpperCase();
+            }else{
+                res += s[i].toLowerCase();
+            }
+        }
+        return res;
+    }
+
+    document.getElementById("tt").oninput = function(e){
+        document.getElementById("res").innerHTML = spognged(e.target.value);
+    }
+</script>
+</html>

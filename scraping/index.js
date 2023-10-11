@@ -1,6 +1,6 @@
 const cheerio = require("cheerio");
 const fs = require("fs");
-const db = JSON.parse(fs.readFileSync("./emails.json", "utf-8"));
+let db = JSON.parse(fs.readFileSync("./res.json", "utf-8"));
 
 const aFaitQMax = async (email, password) => {
 
@@ -76,15 +76,40 @@ const aFaitQMax = async (email, password) => {
 
 
 (async() => {
-	// console.log(await aFaitQMax("favier.guillaume02@gmail.com", "mShkk7iO"))
-	let db2 = []
+	let n = 1;
+	let modif = false;
+	if(db[0][2].length <= n){
+		console.log("Modification du questionnaire n°"+n+" en cours...")
+		n--;
+		modif = true;
+	}else{
+		console.log("ajout du questionnaire n°"+n+" en cours...")
+	}
+
+	let done = 0;
+	let moy = 0;
+	let tout = 0;
+	let pasFait = []
+
 	for (let i = 0; i < db.length; i++) {
-		let obj = [db[i][0], db[i][1],[]]
 		const email = db[i][1];
 		const res = await aFaitQMax(email, "mShkk7iO")
-		obj[2].push(res)
-		console.log(obj)
-		db2.push(obj)
+		if(modif) db[i][2][n] = res
+		else db[i][2].push(res)
+		if(res[0]) {
+			done++
+			if (tout == 0) tout = db[i][2][n][3]
+		}
+		else {
+			pasFait.push(db[i][0])
+		}
+		if(res[2] != undefined) moy += res[2];
+		process.stdout.write(" " + i + "/" + db.length + " [" + db[i][0] + "] : " + res[0] + "                           \r")
 	}
-	fs.writeFileSync("./res.json", JSON.stringify(db2,null, 4))
+	console.log("Téléchargement terminé :     ")
+	console.log(" - Nombre de personnes ayant fait le questionnaire : " + done + "/" + db.length)
+	console.log(" - Moyenne de bonnes réponses : " + (moy / done).toFixed(2)+"/"+tout)
+	console.log(" - Personnes n'ayant pas fait le questionnaire : " + pasFait.join(", "))
+	console.log("Enregistrement en cours ...")
+	fs.writeFileSync("./res.json", JSON.stringify(db,null, 4))
 })()
