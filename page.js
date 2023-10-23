@@ -63,9 +63,10 @@ const range = (start, end) => {
             labels: names,
             datasets: [{
                 type: 'line',
-                label: 'avrage',
+                label: 'moyenne',
                 data: rData.map((item) => globAvreage[nq]),
-                borderWidth: 1
+                borderWidth: 1,
+                pointStyle: false
             },{
                 type: 'bar',
                 label: '# points',
@@ -155,6 +156,8 @@ const range = (start, end) => {
         if(nom != "") {
             barreQuestions.data.datasets[1] = {
                 "label": "réponse de " + nom,
+                "borderColor": "#FF0000",
+                "backgroundColor": "#FF000060",
                 "data": rData[names.indexOf(nom)][2][nq][1].map((item) => item * 100),
                 borderWidth: 1
             }
@@ -183,8 +186,11 @@ const range = (start, end) => {
         data: {
             labels: range(1, nbTests),
             datasets: [{
-                label: '% de bonnes réponses',
+                label: 'moyenne',
                 data: percentAvreage,
+
+                "cubicInterpolationMode": 'monotone',
+                "tension": 0.4,
                 borderWidth: 1
             }, {}]
         },
@@ -192,6 +198,10 @@ const range = (start, end) => {
             scales: {
                 y: {
                     beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: '% de bonnes réponses'
+                    },
                     // stacked: true
                 },
                 x: {
@@ -213,6 +223,11 @@ const range = (start, end) => {
             console.log(rData[names.indexOf(nom)],nom)
             evolutionChart.data.datasets[1] = {
                 "label": "% de bonne réponses de " + nom,
+
+                "borderColor": "#FF0000",
+                "backgroundColor": "#FF000060",
+                "cubicInterpolationMode": 'monotone',
+                "tension": 0.4,
                 "data": rData[names.indexOf(nom)][2].map(item => {
                     console.log(item)
                     if (item[0] == false) return 0
