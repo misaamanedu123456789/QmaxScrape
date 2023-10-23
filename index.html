@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <title>Analyse Qmax</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -13,11 +19,11 @@
             <select id="selectQ">
             </select>
             <br>
-            <label for="sort">Fichier de données</label>
+            <label for="sort">Trier les noms</label>
             <input type="checkbox" name="sort" id="sort">
             <canvas id="fullgrade"></canvas>
             <select id="compEle">
-                
+                <option value=''> Sans comparaison </option>
             </select>
             <canvas id="moy"></canvas>
             <canvas id="evol"></canvas>

@@ -3,6 +3,11 @@ async function getJson(url) {
     const jj = await response.json();
     return jj
 }
+
+const range = (start, end) => {
+    return Array(end - start + 1).fill().map((_, idx) => start + idx)
+}
+
 (async () => {
     const rData = await getJson("/scraping/res.json");
     const selectQ = document.getElementById('selectQ');
@@ -14,8 +19,6 @@ async function getJson(url) {
         selectQ.appendChild(option)
     }
 
-    selectQ.value = 0
-    let nq = Number(selectQ.value);
 
     // calcul des moyennes et du nombre de questions
     const nbquest = []
@@ -34,9 +37,16 @@ async function getJson(url) {
             }
         });
     }
+
+    let percentAvreage = [];
     for (let i = 0; i < nbTests; i++) {
         globAvreage[i] /= nbPers[i];
+
+        percentAvreage.push((globAvreage[i] / nbquest[i]) * 100);
     }
+
+    selectQ.value = nbTests - 1;
+    let nq = Number(selectQ.value);
 
 
     // trie des nom en fonction des résultats
@@ -139,35 +149,6 @@ async function getJson(url) {
             }
         }
     });
-    selectQ.onchange = function (e) {
-        nq = e.target.value;
-        console.log(nq)
-        test.sort((a, b) => {
-            if (a[2][nq][0] == false) return 1
-            if (b[2][nq][0] == false) return -1
-            return b[2][nq][2] - a[2][nq][2]
-        })
-        wow.data.datasets[0]["data"] = rData.map((item) => globAvreage[nq])
-        wow.data.datasets[1]["data"] = rData.map((item) => item[2][nq][2])
-        document.getElementById("sort").checked = false
-        wow.update()
-
-        barreQuestions.data.labels = questionsNum[nq]
-        barreQuestions.data.datasets[0]["data"] = moy[nq]
-        barreQuestions.update()
-
-        document.getElementById("compEle").innerHTML = "<option value=''> Sans comparaison </option>"
-        names.forEach(nom => {
-            if (rData[names.indexOf(nom)][2][nq][0] == false) return
-            const option = document.createElement("option");
-            option.value = nom;
-            option.text = nom;
-            document.getElementById("compEle").appendChild(option);
-        })
-        mmettreBarre("")
-    }
-
-    
     const mmettreBarre = (nom) => {
         
 
@@ -192,9 +173,95 @@ async function getJson(url) {
         option.text = nom;
         document.getElementById("compEle").appendChild(option);
     })
+    
+    
+
+
+    const evolution = document.getElementById('evol');
+    const evolutionChart = new Chart(evolution, {
+        type: 'line',
+        data: {
+            labels: range(1, nbTests),
+            datasets: [{
+                label: '% de bonnes réponses',
+                data: percentAvreage,
+                borderWidth: 1
+            }, {}]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    // stacked: true
+                },
+                x: {
+                    stacked: true
+                }
+            }, plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'évolution des moyennes'
+                }
+            }
+        }
+    });
+    const mettreligne = (nom) => {
+        if (nom != "") {
+            console.log(rData[names.indexOf(nom)],nom)
+            evolutionChart.data.datasets[1] = {
+                "label": "% de bonne réponses de " + nom,
+                "data": rData[names.indexOf(nom)][2].map(item => {
+                    console.log(item)
+                    if (item[0] == false) return 0
+                    return (item[2] / item[3]) * 100
+                }),
+                borderWidth: 1
+            }
+            evolutionChart.update();
+        } else {
+            evolutionChart.data.datasets[1] = {}
+            evolutionChart.update();
+        }
+    }
+
     document.getElementById("compEle").onchange = function (e) {
         mmettreBarre(e.target.value)
+        mettreligne(e.target.value)
         console.log(e.target.value)
+    }
+    
+
+    selectQ.onchange = function (e) {
+        nq = Number(e.target.value);
+        console.log("Qmax n°" + (nq + 1))
+        test.sort((a, b) => {
+            if (a[2][nq][0] == false) return 1
+            if (b[2][nq][0] == false) return -1
+            return b[2][nq][2] - a[2][nq][2]
+        })
+        wow.data.datasets[0]["data"] = rData.map((item) => globAvreage[nq])
+        wow.data.datasets[1]["data"] = rData.map((item) => item[2][nq][2])
+        wow.data.labels = names
+        document.getElementById("sort").checked = false
+        wow.update()
+
+        barreQuestions.data.labels = questionsNum[nq]
+        barreQuestions.data.datasets[0]["data"] = moy[nq]
+        barreQuestions.update()
+
+        document.getElementById("compEle").innerHTML = "<option value=''> Sans comparaison </option>"
+        names.forEach(nom => {
+            if (rData[names.indexOf(nom)][2][nq][0] == false) return
+            const option = document.createElement("option");
+            option.value = nom;
+            option.text = nom;
+            document.getElementById("compEle").appendChild(option);
+        })
+        mmettreBarre("")
+        mettreligne("")
     }
 
 })()
