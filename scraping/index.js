@@ -76,7 +76,7 @@ const aFaitQMax = async (email, password) => {
 
 
 (async() => {
-	let n = 1;
+	let n = 2;
 	let modif = false;
 	if(db[0][2].length <= n){
 		console.log("Modification du questionnaire n°"+n+" en cours...")
