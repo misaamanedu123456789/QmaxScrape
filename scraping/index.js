@@ -74,6 +74,13 @@ const aFaitQMax = async (email, password) => {
 	}
 }
 
+const multchar = (char, n) => {
+	let res = ""
+	for (let i = 0; i < n; i++) {
+		res += char
+	}
+	return res
+}
 
 (async() => {
 	let n = 2;
@@ -90,6 +97,7 @@ const aFaitQMax = async (email, password) => {
 	let moy = 0;
 	let tout = 0;
 	let pasFait = []
+	let reschar = multchar(" ", db.length).split("")
 
 	for (let i = 0; i < db.length; i++) {
 		const email = db[i][1];
@@ -99,14 +107,16 @@ const aFaitQMax = async (email, password) => {
 		if(res[0]) {
 			done++
 			if (tout == 0) tout = db[i][2][n][3]
+			reschar[i] = "✅"
 		}
 		else {
+			reschar[i] = "❌"
 			pasFait.push(db[i][0])
 		}
 		if(res[2] != undefined) moy += res[2];
-		process.stdout.write(" " + i + "/" + db.length + " [" + db[i][0] + "] : " + res[0] + "                           \r")
+		process.stdout.write(" " + i + "/" + db.length + reschar.join("") + " [" + db[i][0] + "] : " + res[0] + "                           \r")
 	}
-	console.log("Téléchargement terminé :     ")
+	console.log("\nTéléchargement terminé :     ")
 	console.log(" - Nombre de personnes ayant fait le questionnaire : " + done + "/" + db.length)
 	console.log(" - Moyenne de bonnes réponses : " + (moy / done).toFixed(2)+"/"+tout)
 	console.log(" - Personnes n'ayant pas fait le questionnaire : " + pasFait.join(", "))
