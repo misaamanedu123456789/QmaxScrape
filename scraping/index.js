@@ -114,7 +114,7 @@ const multchar = (char, n) => {
 			pasFait.push(db[i][0])
 		}
 		if(res[2] != undefined) moy += res[2];
-		process.stdout.write(" " + i + "/" + db.length + reschar.join("") + " [" + db[i][0] + "] : " + res[0] + "                           \r")
+		process.stdout.write(" " + (i+1) + "/" + db.length + reschar.join("") + " [" + db[i][0] + "] : " + res[0] + "         \r")
 	}
 	console.log("\nTéléchargement terminé :     ")
 	console.log(" - Nombre de personnes ayant fait le questionnaire : " + done + "/" + db.length)
