@@ -83,7 +83,7 @@ const multchar = (char, n) => {
 }
 
 (async() => {
-	let n = 2;
+	let n = 3;
 	let modif = false;
 	if(db[0][2].length <= n){
 		console.log("Modification du questionnaire n°"+n+" en cours...")

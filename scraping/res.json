@@ -70,6 +70,10 @@
                 ],
                 25,
                 32
+            ],
+            [
+                false,
+                null
             ]
         ]
     ],
@@ -144,6 +148,34 @@
                 ],
                 24,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    true,
+                    false,
+                    true
+                ],
+                12,
+                21
             ]
         ]
     ],
@@ -218,6 +250,34 @@
                 ],
                 19,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false
+                ],
+                17,
+                21
             ]
         ]
     ],
@@ -292,6 +352,34 @@
                 ],
                 22,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                15,
+                21
             ]
         ]
     ],
@@ -331,6 +419,34 @@
             [
                 false,
                 null
+            ],
+            [
+                true,
+                [
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                15,
+                21
             ]
         ]
     ],
@@ -380,6 +496,10 @@
                 ],
                 29,
                 32
+            ],
+            [
+                false,
+                null
             ]
         ]
     ],
@@ -454,6 +574,34 @@
                 ],
                 24,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    false,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true
+                ],
+                12,
+                21
             ]
         ]
     ],
@@ -528,6 +676,34 @@
                 ],
                 18,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true
+                ],
+                14,
+                21
             ]
         ]
     ],
@@ -602,6 +778,34 @@
                 ],
                 25,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true
+                ],
+                15,
+                21
             ]
         ]
     ],
@@ -651,6 +855,34 @@
                 ],
                 26,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                19,
+                21
             ]
         ]
     ],
@@ -725,6 +957,34 @@
                 ],
                 23,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false
+                ],
+                15,
+                21
             ]
         ]
     ],
@@ -732,6 +992,10 @@
         "BOSCO Nat'Sy",
         "bosnatprog@gmail.com",
         [
+            [
+                false,
+                null
+            ],
             [
                 false,
                 null
@@ -813,6 +1077,34 @@
                 ],
                 20,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    false,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true
+                ],
+                17,
+                21
             ]
         ]
     ],
@@ -887,6 +1179,34 @@
                 ],
                 23,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    false,
+                    false
+                ],
+                16,
+                21
             ]
         ]
     ],
@@ -961,6 +1281,34 @@
                 ],
                 14,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    true,
+                    true,
+                    false
+                ],
+                13,
+                21
             ]
         ]
     ],
@@ -1010,6 +1358,34 @@
                 ],
                 18,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true
+                ],
+                16,
+                21
             ]
         ]
     ],
@@ -1084,6 +1460,34 @@
                 ],
                 24,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true,
+                    false
+                ],
+                16,
+                21
             ]
         ]
     ],
@@ -1158,6 +1562,34 @@
                 ],
                 17,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                ],
+                11,
+                21
             ]
         ]
     ],
@@ -1232,6 +1664,34 @@
                 ],
                 27,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                19,
+                21
             ]
         ]
     ],
@@ -1306,6 +1766,10 @@
                 ],
                 20,
                 32
+            ],
+            [
+                false,
+                null
             ]
         ]
     ],
@@ -1345,6 +1809,10 @@
             [
                 false,
                 null
+            ],
+            [
+                false,
+                null
             ]
         ]
     ],
@@ -1352,6 +1820,10 @@
         "DAMIANI--PANE Jean-Pascal",
         "jpdp2b@orange.fr",
         [
+            [
+                false,
+                null
+            ],
             [
                 false,
                 null
@@ -1433,6 +1905,34 @@
                 ],
                 21,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true
+                ],
+                17,
+                21
             ]
         ]
     ],
@@ -1507,6 +2007,34 @@
                 ],
                 23,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false
+                ],
+                16,
+                21
             ]
         ]
     ],
@@ -1581,6 +2109,34 @@
                 ],
                 25,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true,
+                    false
+                ],
+                17,
+                21
             ]
         ]
     ],
@@ -1620,6 +2176,34 @@
             [
                 false,
                 null
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                20,
+                21
             ]
         ]
     ],
@@ -1694,6 +2278,34 @@
                 ],
                 23,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    false,
+                    true,
+                    false,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true,
+                    false,
+                    false,
+                    true,
+                    false,
+                    false
+                ],
+                10,
+                21
             ]
         ]
     ],
@@ -1768,6 +2380,34 @@
                 ],
                 29,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                18,
+                21
             ]
         ]
     ],
@@ -1842,6 +2482,34 @@
                 ],
                 23,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true
+                ],
+                15,
+                21
             ]
         ]
     ],
@@ -1916,6 +2584,34 @@
                 ],
                 27,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                20,
+                21
             ]
         ]
     ],
@@ -1990,6 +2686,34 @@
                 ],
                 24,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true
+                ],
+                14,
+                21
             ]
         ]
     ],
@@ -1997,6 +2721,10 @@
         "GRUMELART Malcolm",
         "mal.grumelart@outlook.fr",
         [
+            [
+                false,
+                null
+            ],
             [
                 false,
                 null
@@ -2078,6 +2806,34 @@
                 ],
                 26,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                ],
+                12,
+                21
             ]
         ]
     ],
@@ -2152,6 +2908,34 @@
                 ],
                 25,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true
+                ],
+                13,
+                21
             ]
         ]
     ],
@@ -2191,6 +2975,34 @@
             [
                 false,
                 null
+            ],
+            [
+                true,
+                [
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    false,
+                    false,
+                    true,
+                    false,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true
+                ],
+                13,
+                21
             ]
         ]
     ],
@@ -2265,6 +3077,34 @@
                 ],
                 23,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true
+                ],
+                18,
+                21
             ]
         ]
     ],
@@ -2339,6 +3179,34 @@
                 ],
                 21,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                15,
+                21
             ]
         ]
     ],
@@ -2413,6 +3281,34 @@
                 ],
                 26,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false
+                ],
+                16,
+                21
             ]
         ]
     ],
@@ -2487,6 +3383,34 @@
                 ],
                 27,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true
+                ],
+                18,
+                21
             ]
         ]
     ],
@@ -2561,6 +3485,34 @@
                 ],
                 27,
                 32
+            ],
+            [
+                true,
+                [
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                16,
+                21
             ]
         ]
     ],
@@ -2635,6 +3587,34 @@
                 ],
                 25,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    false,
+                    false,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true,
+                    false,
+                    true
+                ],
+                13,
+                21
             ]
         ]
     ],
@@ -2709,6 +3689,34 @@
                 ],
                 23,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    false,
+                    false,
+                    false
+                ],
+                12,
+                21
             ]
         ]
     ],
@@ -2783,6 +3791,34 @@
                 ],
                 26,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                18,
+                21
             ]
         ]
     ],
@@ -2832,6 +3868,34 @@
                 ],
                 16,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    true,
+                    true,
+                    false,
+                    false
+                ],
+                13,
+                21
             ]
         ]
     ],
@@ -2906,6 +3970,34 @@
                 ],
                 23,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    false,
+                    false
+                ],
+                12,
+                21
             ]
         ]
     ],
@@ -2980,6 +4072,34 @@
                 ],
                 24,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    true,
+                    false
+                ],
+                14,
+                21
             ]
         ]
     ],
@@ -3054,6 +4174,34 @@
                 ],
                 24,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    false,
+                    true,
+                    true,
+                    false
+                ],
+                14,
+                21
             ]
         ]
     ],
@@ -3128,6 +4276,34 @@
                 ],
                 21,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    false,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false,
+                    false,
+                    true,
+                    false,
+                    true
+                ],
+                10,
+                21
             ]
         ]
     ],
@@ -3202,6 +4378,34 @@
                 ],
                 26,
                 32
+            ],
+            [
+                true,
+                [
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    false,
+                    true,
+                    true
+                ],
+                16,
+                21
             ]
         ]
     ]
